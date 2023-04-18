@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    background: linear-gradient(90deg, #070707, #19411c, #29af3f, #19411c, #000000);
+}
+.gameContainer{
+    margin: 0 auto;
+}
+canvas#gameBoard{
+    margin-top: 10px;
+}
+#gameBoard{
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 7px; */
+    margin: 0 auto;
+}
+#scoreText{
+    font-family: "Permanent Marker", cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-top: -10px;
+    color: #000000;
+}
+#reset{
+    font-size: 20px;
+    width: 100px;
+    /* height: 50px; */
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #0d1d0e;
+    color: aliceblue;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 7px 70px;
+    margin: 0 auto;
+    font-family: cursive;
+}
+#controls{
+    display: none;
+}
+footer{
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 2%;
+}
+footer a{
+    text-decoration: none;
+    color: #ffeded;
+}
+
+@media screen and (max-width: 800px) {
+    *{
+        margin: 0;
+    }
+    body{
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    canvas#gameBoard{
+        margin-top: 5px;
+    }
+    #gameBoard{
+        width: 280px;
+        height: 280px;
+        margin: 0;
+        display: flex;
+        margin: 0 auto;
+    }
+    #scoreText{
+        font-size: 40px;
+        padding-top: 2px;
+    }
+    #controls {
+        display: grid;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 23px;
+    }
+    #controls li{
+        font-size: 37px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 0 5px;
+        list-style-type: none;
+        text-shadow: 2px 2px #000;
+        color: #fff;
+    }
+    #controls .line-1{
+        display: flex;
+        margin: 0 auto;
+    }
+    #controls .line-2{
+        display: flex;
+        gap: 100px;
+    }
+    #controls .line-3{
+        display: flex;
+        margin: 0 auto;
+    }
+    #reset{
+        margin-top: 40px;
+    }
+    footer{
+        padding-top: 5%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
